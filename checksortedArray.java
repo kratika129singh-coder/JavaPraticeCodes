@@ -11,16 +11,27 @@ public class checksortedArray {
         for(int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();}
       
-      boolean issorted=true;
-  
+      boolean Asending=true;
+      boolean Desending=true;
+  {
       for(int i=0;i<arr.length-1;i++){
             if(arr[i]>arr[i+1]){
-                {issorted =false;
+                {Asending =false;
                      break;}} }
-
-    if(issorted==true){
-        System.out.println("Array is sorted ");}
+      for(int i=0;i<arr.length-1;i++){
+        if(arr[i]<arr[i+1]){
+            {
+                Desending=false;
+                break;}}
+            }
+ }
+      
+     if(Asending){
+        System.out.println("Array is sorted in Asending order ");}
+    else if(Desending){
+        System.out.println("Array is not sorted in Desending order");}
     else{
-        System.out.println("Array is not sorted");}
+        System.out.println("Array is not sorted in any order");
+        }
 
     }}
