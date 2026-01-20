@@ -24,7 +24,7 @@ _ _ _
 
 ### 😎 Fun Fact 
 > I like to Spend time with myself🙋‍♀️
-> Coding makes me feel powerful & Confient✨
+> Coding makes me feel powerful & Confdient✨
 
 
 
