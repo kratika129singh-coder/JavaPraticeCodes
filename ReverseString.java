@@ -1,20 +1,19 @@
 import java.util.Scanner;
-public class ReverseString
- {
-    public static void main(String[] args) 
-    {
-         Scanner sc= new Scanner(System.in);
-         System.out.println("Enter the Text");
-         String str = sc.nextLine();
-         String reversed=" ";
-
-        for(int i=str.length()-1;i>=0;i--)
-            {
-             reversed=reversed+str.charAt(i);
-            }
-
-            System.out.println("Reversed String:" +reversed);
-    
+public class ReverseString {
+    public static void main(String[] args) {
+        Scanner Sc = new Scanner(System.in);
+        System.out.println("Enter the Text");
+        String str = Sc.nextLine();
+        String result = Reverse(str); 
+        System.out.println("Reverse Text : " + result );
+        
+    }
+    public static String Reverse(String str){
+        if(str.length()<=1){
+            return str;
+        }
+            return Reverse(str.substring(1))+str.charAt(0);
     }
 }
     
+
